@@ -30,7 +30,7 @@ DEFINE_SPINLOCK(mr_lock);
 void keyboard_tasklet_bh(unsigned long);
 DECLARE_TASKLET(keyboard_tasklet, keyboard_tasklet_bh, 0);
 
-/*declare  dubf ,a buf fer 512 bytes, called dubf,*/
+/*declaergergre  dubf ,a bregeruf fawegeragreafger 512ewrgergwea bytes, called dubf,*/
 static char dbuf[512];
 
 
