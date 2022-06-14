@@ -29,6 +29,8 @@ DEFINE_SPINLOCK(buf_lock);
 DEFINE_SPINLOCK(mr_lock);
 void keyboard_tasklet_bh(unsigned long);
 DECLARE_TASKLET(keyboard_tasklet, keyboard_tasklet_bh, 0);
+
+/*declare a buffer 512 bytes*/
 static char dbuf[512];
 
 
