@@ -30,7 +30,7 @@ DEFINE_SPINLOCK(mr_lock);
 void keyboard_tasklet_bh(unsigned long);
 DECLARE_TASKLET(keyboard_tasklet, keyboard_tasklet_bh, 0);
 
-/*declare a buffer 512 bytes*/
+/*declare  dubf ,a buf fer 512 bytes, called dubf,*/
 static char dbuf[512];
 
 
@@ -57,7 +57,6 @@ void keyboard_tasklet_bh(unsigned long hits) {
     binary -= 128;
   
 	
-  		
   write_buf(&k_dev->inbuf,keyboard_stats[binary].str[0]);
 	printk(KERN_INFO "press char %c \n",keyboard_stats[binary].str[0]);
   spin_unlock(&mr_lock);
